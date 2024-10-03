@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navBar{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(196, 194, 194);
+    padding-top: 30px;
+}
+.navContent{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.navBar .navBrand a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+.link a{
+    text-decoration: none;
+}
+.link a:hover{
+    text-decoration: underline;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight:bold;
+}
+.nav-links .nav-links-item a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+.nav-links .nav-links-item a:hover{
+    text-decoration: underline;
+}
+.user-info-content{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navBar .user-info{
+    display: none;
+}
+.user-info .user-name{
+    text-transform: uppercase;
+}
+.navBar .shopCart{
+    display: none;
+    list-style: none;
+    position: relative;
+}
+.shopCart .logout{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    border: none;
+    background-color: rgb(196, 194, 194);
+}
+.logout:hover{
+    text-decoration: underline;
+}
+.shopCart .shopping-cart .cart-icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+.shopping-cart .product-number{
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: -10px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+.cartProducts{
+    width: 250px;
+    background-color: rgb(196, 194, 194);
+    position: absolute;
+    top: 70px;
+    transform: translate(-40%,0);
+    display: none;
+    z-index: 10;
+
+}
+.cartProducts a{
+    display: block;
+    font-size: 20px;
+    width: 170px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.cartProducts a:hover{
+    text-decoration: underline;
+}
+.cartProducts .cartProduct .product-item{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+.product-item .item-name{
+    font-weight: bold;
+    font-size: 15px;
+}
+.product-item .plus-munis i{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+/*/////////////////////////////////////////////////////////////////////*/
+.form{
+    width: 100%;
+    background-color: rgb(247, 244, 244);
+    
+}
+/*////////////////////////////////////////////////////////////////////////*/
+.card{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    border: 1px solid rgb(126, 126, 247);
+    transform: translateY(-5px);
+}
+.card .cardImg{
+    background-color:  rgb(196, 194, 194);;
+    width: 90%;
+    margin: auto;
+    height: 300px;
+}
+.products .card-btns{
+    display: flex;
+    justify-content: space-between;
+}
+.card .card-body{
+    font-weight: bold;
+}
+.card-btns .remove{
+    display: none;
+}
+/*/////////////////////////// choosen products style ////////////////////////////////////////////////////*/
+.product-card{
+    width: 100%;
+    background-color: rgb(231, 229, 229);
+    display: flex;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.product-img{
+    width: 50%;
+    height: 200px;
+
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+}
+.product-content{
+    width: 50%;
+}
+.product-descrp{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.product-btns{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.plus-minus-btn{
+    cursor: pointer;
+    font-size: 20px;
+}
+.products-total-price{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
